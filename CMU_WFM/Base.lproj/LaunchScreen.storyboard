@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,112 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_landing" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-xg-nQk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_cmu" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-LE-dwm">
+                                <rect key="frame" x="137" y="168.5" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="WZ8-2D-dQj"/>
+                                    <constraint firstAttribute="height" constant="140" id="cIP-Tn-jGD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_camt" translatesAutoresizingMaskIntoConstraints="NO" id="lDm-Ot-ITG">
+                                <rect key="frame" x="117" y="474.5" width="180" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Hog-ec-1K0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_baak" translatesAutoresizingMaskIntoConstraints="NO" id="3Yk-wP-FDu">
+                                <rect key="frame" x="161" y="621.5" width="92.5" height="37.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powerd by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGe-W6-5AL">
+                                <rect key="frame" x="166.5" y="437.5" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work from home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwQ-iH-fWZ">
+                                <rect key="frame" x="139.5" y="342.5" width="135.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PzB-gn-NXz">
+                                <rect key="frame" x="147" y="332.5" width="120" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="d3O-zI-NEd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College of Arts, Media and Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-G0-gXz">
+                                <rect key="frame" x="59" y="542.5" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chiang Mai Unoversity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-bw-zeZ">
+                                <rect key="frame" x="130" y="571.5" width="154" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAAK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-1c-SJL">
+                                <rect key="frame" x="185" y="675" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAAK Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuM-bU-ckc">
+                                <rect key="frame" x="152.5" y="704" width="109" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kuM-bU-ckc" firstAttribute="top" secondItem="P6l-1c-SJL" secondAttribute="bottom" constant="8" id="1uh-Ml-iJh"/>
+                            <constraint firstItem="qWd-G0-gXz" firstAttribute="top" secondItem="lDm-Ot-ITG" secondAttribute="bottom" constant="16" id="5KW-za-esv"/>
+                            <constraint firstItem="LOn-xg-nQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="60C-Kg-tN7"/>
+                            <constraint firstItem="3Yk-wP-FDu" firstAttribute="top" secondItem="tvQ-bw-zeZ" secondAttribute="bottom" constant="32" id="6Pb-bN-NSM"/>
+                            <constraint firstItem="LOn-xg-nQk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7Tt-Zc-otG"/>
+                            <constraint firstItem="P6l-1c-SJL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Acy-7j-EzX"/>
+                            <constraint firstItem="zwQ-iH-fWZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Au9-E4-KMa"/>
+                            <constraint firstItem="lDm-Ot-ITG" firstAttribute="top" secondItem="XGe-W6-5AL" secondAttribute="bottom" constant="16" id="Fyv-bi-WuN"/>
+                            <constraint firstItem="XGe-W6-5AL" firstAttribute="top" secondItem="zwQ-iH-fWZ" secondAttribute="bottom" constant="74" id="IiI-8n-oC6"/>
+                            <constraint firstItem="kuM-bU-ckc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OVh-ib-MlW"/>
+                            <constraint firstItem="XGe-W6-5AL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OYD-R0-lao"/>
+                            <constraint firstItem="P6l-1c-SJL" firstAttribute="top" secondItem="3Yk-wP-FDu" secondAttribute="bottom" constant="16" id="OlU-cF-AWt"/>
+                            <constraint firstItem="lDm-Ot-ITG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ss0-pf-EQ1"/>
+                            <constraint firstItem="PzB-gn-NXz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XkN-kQ-xD4"/>
+                            <constraint firstItem="qWd-G0-gXz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZTJ-xQ-zpb"/>
+                            <constraint firstItem="4gm-LE-dwm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gX5-FD-EOa"/>
+                            <constraint firstItem="tvQ-bw-zeZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i6S-R2-sOf"/>
+                            <constraint firstAttribute="bottom" secondItem="LOn-xg-nQk" secondAttribute="bottom" id="ius-g4-DfK"/>
+                            <constraint firstItem="3Yk-wP-FDu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nWe-pi-YWG"/>
+                            <constraint firstItem="PzB-gn-NXz" firstAttribute="top" secondItem="4gm-LE-dwm" secondAttribute="bottom" constant="24" id="oiW-jZ-fME"/>
+                            <constraint firstItem="LOn-xg-nQk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p0l-Lm-XYc"/>
+                            <constraint firstItem="tvQ-bw-zeZ" firstAttribute="top" secondItem="qWd-G0-gXz" secondAttribute="bottom" constant="8" id="pHg-0J-yLK"/>
+                            <constraint firstItem="zwQ-iH-fWZ" firstAttribute="top" secondItem="PzB-gn-NXz" secondAttribute="bottom" constant="8" id="sLk-XE-CcQ"/>
+                            <constraint firstItem="XGe-W6-5AL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sg7-1M-pMs"/>
+                            <constraint firstItem="PzB-gn-NXz" firstAttribute="width" secondItem="zwQ-iH-fWZ" secondAttribute="width" multiplier="0.885609" id="sik-ig-GNu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_landing" width="320" height="568"/>
+        <image name="logo_baak" width="92.5" height="37.5"/>
+        <image name="logo_camt" width="153" height="52"/>
+        <image name="logo_cmu" width="76" height="76"/>
+    </resources>
 </document>

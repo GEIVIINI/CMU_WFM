@@ -1,0 +1,6 @@
+framework module Pods_CMU_WFM {
+  umbrella header "Pods-CMU_WFM-umbrella.h"
+
+  export *
+  module * { export * }
+}
