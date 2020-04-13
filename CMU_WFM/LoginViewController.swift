@@ -8,8 +8,11 @@
 
 import UIKit
 import Alamofire
+import FacebookLogin
+import FacebookCore
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +20,58 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func facebookLoginTapped(_ sender: Any) {
-        login(accessToken: "fTj9pAjhHtDsAcSuRU0B7qWJRKE4dxd02", email: "pai.pp@hotmail.co.th", loginType: "F", profileName: "g")
+        let login = LoginManager()
+        login.logIn(permissions: ["public_profile", "email"],
+            from: self,
+            handler: {(result,error) in
+                if error != nil {
+                    print("Error : ", error as Any)
+                }else if(result?.isCancelled)!{
+                    print("Cancel")
+                }else{
+                    self.getFBUserInfo()
+                }
+        })
+    }
+    
+    func getFBUserInfo() {
+        let graphRequest = GraphRequest(graphPath: "me", parameters: ["fields": "id, email, name, picture.type(large)"], tokenString: AccessToken.current?.tokenString, version: Settings.defaultGraphAPIVersion, httpMethod: HTTPMethod.get)
+        graphRequest.start(completionHandler: { (fields, result, error) in
+            if(error == nil) {
+                let dict = result as! NSDictionary
+                if let email = dict.object(forKey: "email") as? String,
+                    let name = dict.object(forKey: "name") as? String,
+                    let token = AccessToken.current?.tokenString {
+                        self.login(accessToken: token, email: email, loginType: "F", profileName: name)
+                }
+            }
+        })
     }
     
     @IBAction func gmailLoginTappped(_ sender: Any) {
-        login(accessToken: "fTj9pAjhHtDsAcSuRU0B7qWJRKE4dxd02", email: "pai.pp@hotmail.co.th", loginType: "G", profileName: "g")
+        GIDSignIn.sharedInstance().clientID = "23212872162-a7sqgj6i36qc2373foqljck0a3bcr590.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+        if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+        } else {
+            print("\(error.localizedDescription)")
+        }
+            return
+        }
+        let idToken = user.authentication.idToken
+        let fullName = user.profile.name
+        let email = user.profile.email
+        if let token = idToken, let name = fullName, let gEmail = email {
+            login(accessToken: token, email: gEmail, loginType: "G", profileName: name)
+        }
     }
     
     func login(accessToken: String, email: String, loginType: String, profileName: String) {

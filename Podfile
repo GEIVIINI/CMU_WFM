@@ -11,6 +11,11 @@ target 'CMU_WFM' do
   pod 'ImageSlideshow', '~> 1.8.3'
   pod 'Kingfisher'
   pod "ImageSlideshow/Kingfisher"
+
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'GoogleSignIn'
   
   target 'CMU_WFMTests' do
     inherit! :search_paths

@@ -24,6 +24,7 @@
 		058C836B243A4DDD009F571C /* CMU_WFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058C836A243A4DDD009F571C /* CMU_WFMUITests.swift */; };
 		0592F1FB2441C7C000AE527D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592F1F92441C7BF00AE527D /* ProfileViewController.swift */; };
 		0592F1FE2441CFB300AE527D /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592F1FD2441CFB300AE527D /* LunchViewController.swift */; };
+		0593D54E2444860800B76C36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0593D54D2444860800B76C36 /* GoogleService-Info.plist */; };
 		19D5F298C4187810DEFD572F /* Pods_CMU_WFMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538116273CCEB4F11B4594F /* Pods_CMU_WFMTests.framework */; };
 		4E62A607799882E6A5C7961A /* Pods_CMU_WFM_CMU_WFMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B839C3B334C98B6D4034A55C /* Pods_CMU_WFM_CMU_WFMUITests.framework */; };
 		DEAF098FC21DAB43E2FF68A7 /* Pods_CMU_WFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FCE38CFE40095EC6DFF701 /* Pods_CMU_WFM.framework */; };
@@ -70,6 +71,7 @@
 		058C836C243A4DDD009F571C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0592F1F92441C7BF00AE527D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0592F1FD2441CFB300AE527D /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		0593D54D2444860800B76C36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F83CCEBA2B2DC890B12A4BF /* Pods-CMU_WFMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMU_WFMTests.release.xcconfig"; path = "Target Support Files/Pods-CMU_WFMTests/Pods-CMU_WFMTests.release.xcconfig"; sourceTree = "<group>"; };
 		3538116273CCEB4F11B4594F /* Pods_CMU_WFMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMU_WFMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6079591AA999541B74686D34 /* Pods-CMU_WFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMU_WFM.release.xcconfig"; path = "Target Support Files/Pods-CMU_WFM/Pods-CMU_WFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				058C834E243A4DDB009F571C /* Main.storyboard */,
 				058C8351243A4DDD009F571C /* Assets.xcassets */,
 				058C8353243A4DDD009F571C /* LaunchScreen.storyboard */,
+				0593D54D2444860800B76C36 /* GoogleService-Info.plist */,
 				058C8356243A4DDD009F571C /* Info.plist */,
 			);
 			path = CMU_WFM;
@@ -239,6 +242,7 @@
 				058C8342243A4DDB009F571C /* Frameworks */,
 				058C8343243A4DDB009F571C /* Resources */,
 				0A0432E5DE08A4B4966F3639 /* [CP] Embed Pods Frameworks */,
+				750BA9C6925E0CD53C817F31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +281,7 @@
 				058C8363243A4DDD009F571C /* Frameworks */,
 				058C8364243A4DDD009F571C /* Resources */,
 				42AC85018DA00F76AADDBEBF /* [CP] Embed Pods Frameworks */,
+				66CDC6BFE4884B8F36F057FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +343,7 @@
 			files = (
 				0566A96B243C498F000C7BBC /* NewsDetailViewController.xib in Resources */,
 				058C8355243A4DDD009F571C /* LaunchScreen.storyboard in Resources */,
+				0593D54E2444860800B76C36 /* GoogleService-Info.plist in Resources */,
 				058C8352243A4DDD009F571C /* Assets.xcassets in Resources */,
 				058C8350243A4DDB009F571C /* Main.storyboard in Resources */,
 			);
@@ -416,6 +422,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		66CDC6BFE4884B8F36F057FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM-CMU_WFMUITests/Pods-CMU_WFM-CMU_WFMUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM-CMU_WFMUITests/Pods-CMU_WFM-CMU_WFMUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM-CMU_WFMUITests/Pods-CMU_WFM-CMU_WFMUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7278369FC63B51B833DF0AAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +459,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		750BA9C6925E0CD53C817F31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM/Pods-CMU_WFM-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM/Pods-CMU_WFM-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CMU_WFM/Pods-CMU_WFM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C403B9AF3CE5FDF446DA8327 /* [CP] Check Pods Manifest.lock */ = {
