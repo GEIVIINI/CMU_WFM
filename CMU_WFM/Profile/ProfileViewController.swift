@@ -90,7 +90,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             
         }))
         alert.addAction(UIAlertAction(title: "เกี่ยวกับ", style: .default , handler:{ (UIAlertAction)in
-            
+            let viewController = AboutViewController(nibName: "AboutViewController", bundle: nil)
+            self.present(viewController, animated: true, completion: nil)
         }))
         alert.addAction(UIAlertAction(title: "ออกจากระบบ", style: .destructive , handler:{ (UIAlertAction)in
             print("Log out")

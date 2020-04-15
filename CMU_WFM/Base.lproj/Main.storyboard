@@ -187,6 +187,35 @@
             </objects>
             <point key="canvasLocation" x="3334.7826086956525" y="137.94642857142856"/>
         </scene>
+        <!--Work Table View Controller-->
+        <scene sceneID="yVL-Of-ubq">
+            <objects>
+                <tableViewController storyboardIdentifier="WorkTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sx9-Tf-Ifv" customClass="WorkTableViewController" customModule="CMU_WFM" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fqv-8C-Wp1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xfE-V7-nCo">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xfE-V7-nCo" id="cPc-k3-ImP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Sx9-Tf-Ifv" id="myB-zk-91F"/>
+                            <outlet property="delegate" destination="Sx9-Tf-Ifv" id="nsV-O5-M4f"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="icon_menu_report" id="vPg-tX-JiM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvp-MX-O2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3335" y="834"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="H05-AN-fAP">
             <objects>
@@ -220,29 +249,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="x6e-Ub-ySD" kind="relationship" relationship="viewControllers" id="N44-Fs-rt2"/>
-                        <segue destination="rvf-TN-0tn" kind="relationship" relationship="viewControllers" id="9EZ-KW-vWg"/>
-                        <segue destination="289-3z-kBi" kind="relationship" relationship="viewControllers" id="Fvh-s7-W7X"/>
+                        <segue destination="Sx9-Tf-Ifv" kind="relationship" relationship="viewControllers" id="yhM-He-PSu"/>
+                        <segue destination="289-3z-kBi" kind="relationship" relationship="viewControllers" id="mNa-EZ-nIx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNP-Mq-mvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2424.6376811594205" y="137.94642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Fn7-ES-v3T">
-            <objects>
-                <viewController id="rvf-TN-0tn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tE8-DZ-aKq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Xfh-Iw-mT2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="icon_menu_report" id="Qbk-kf-N4R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EZY-3t-dgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3355" y="838"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="BdT-vq-Eqh">

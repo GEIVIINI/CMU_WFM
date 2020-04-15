@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0561C9B2243B96D1006A17BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0561C9B1243B96D1006A17BD /* LoginViewController.swift */; };
+		05624C58244785FB00045071 /* WorkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05624C57244785FB00045071 /* WorkTableViewController.swift */; };
+		05624C5B2447874200045071 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05624C592447874200045071 /* HeaderTableViewCell.swift */; };
+		05624C5C2447874200045071 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05624C5A2447874200045071 /* HeaderTableViewCell.xib */; };
 		0566A962243C38F9000C7BBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566A961243C38F9000C7BBC /* User.swift */; };
 		0566A964243C3902000C7BBC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566A963243C3902000C7BBC /* News.swift */; };
 		0566A966243C3B59000C7BBC /* LocalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566A965243C3B59000C7BBC /* LocalFile.swift */; };
@@ -25,6 +28,8 @@
 		0592F1FB2441C7C000AE527D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592F1F92441C7BF00AE527D /* ProfileViewController.swift */; };
 		0592F1FE2441CFB300AE527D /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592F1FD2441CFB300AE527D /* LunchViewController.swift */; };
 		0593D54E2444860800B76C36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0593D54D2444860800B76C36 /* GoogleService-Info.plist */; };
+		0593D5522444901E00B76C36 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0593D5502444901E00B76C36 /* AboutViewController.swift */; };
+		0593D5532444901E00B76C36 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0593D5512444901E00B76C36 /* AboutViewController.xib */; };
 		19D5F298C4187810DEFD572F /* Pods_CMU_WFMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3538116273CCEB4F11B4594F /* Pods_CMU_WFMTests.framework */; };
 		4E62A607799882E6A5C7961A /* Pods_CMU_WFM_CMU_WFMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B839C3B334C98B6D4034A55C /* Pods_CMU_WFM_CMU_WFMUITests.framework */; };
 		DEAF098FC21DAB43E2FF68A7 /* Pods_CMU_WFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FCE38CFE40095EC6DFF701 /* Pods_CMU_WFM.framework */; };
@@ -49,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		0561C9B1243B96D1006A17BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		05624C57244785FB00045071 /* WorkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTableViewController.swift; sourceTree = "<group>"; };
+		05624C592447874200045071 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		05624C5A2447874200045071 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0566A961243C38F9000C7BBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0566A963243C3902000C7BBC /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		0566A965243C3B59000C7BBC /* LocalFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFile.swift; sourceTree = "<group>"; };
@@ -72,6 +80,8 @@
 		0592F1F92441C7BF00AE527D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0592F1FD2441CFB300AE527D /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
 		0593D54D2444860800B76C36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0593D5502444901E00B76C36 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0593D5512444901E00B76C36 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		1F83CCEBA2B2DC890B12A4BF /* Pods-CMU_WFMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMU_WFMTests.release.xcconfig"; path = "Target Support Files/Pods-CMU_WFMTests/Pods-CMU_WFMTests.release.xcconfig"; sourceTree = "<group>"; };
 		3538116273CCEB4F11B4594F /* Pods_CMU_WFMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMU_WFMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6079591AA999541B74686D34 /* Pods-CMU_WFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMU_WFM.release.xcconfig"; path = "Target Support Files/Pods-CMU_WFM/Pods-CMU_WFM.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +121,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05624C56244785E800045071 /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				05624C57244785FB00045071 /* WorkTableViewController.swift */,
+				05624C592447874200045071 /* HeaderTableViewCell.swift */,
+				05624C5A2447874200045071 /* HeaderTableViewCell.xib */,
+			);
+			path = Work;
+			sourceTree = "<group>";
+		};
 		0566A960243C38EA000C7BBC /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,14 +183,14 @@
 		058C8347243A4DDB009F571C /* CMU_WFM */ = {
 			isa = PBXGroup;
 			children = (
+				0593D554244492B000B76C36 /* Regis */,
 				0566A96C243C5816000C7BBC /* Extension */,
 				0566A960243C38EA000C7BBC /* DTO */,
 				0566A967243C497C000C7BBC /* News */,
 				0592F1F82441C76C00AE527D /* Profile */,
+				05624C56244785E800045071 /* Work */,
 				058C8348243A4DDB009F571C /* AppDelegate.swift */,
 				058C834A243A4DDB009F571C /* SceneDelegate.swift */,
-				0592F1FD2441CFB300AE527D /* LunchViewController.swift */,
-				0561C9B1243B96D1006A17BD /* LoginViewController.swift */,
 				058C834C243A4DDB009F571C /* ViewController.swift */,
 				058C834E243A4DDB009F571C /* Main.storyboard */,
 				058C8351243A4DDD009F571C /* Assets.xcassets */,
@@ -202,9 +222,28 @@
 		0592F1F82441C76C00AE527D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0593D54F2444900B00B76C36 /* About */,
 				0592F1F92441C7BF00AE527D /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0593D54F2444900B00B76C36 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0593D5502444901E00B76C36 /* AboutViewController.swift */,
+				0593D5512444901E00B76C36 /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0593D554244492B000B76C36 /* Regis */ = {
+			isa = PBXGroup;
+			children = (
+				0592F1FD2441CFB300AE527D /* LunchViewController.swift */,
+				0561C9B1243B96D1006A17BD /* LoginViewController.swift */,
+			);
+			path = Regis;
 			sourceTree = "<group>";
 		};
 		093B82DC3DF1E3623AC644AD /* Pods */ = {
@@ -342,9 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0566A96B243C498F000C7BBC /* NewsDetailViewController.xib in Resources */,
+				05624C5C2447874200045071 /* HeaderTableViewCell.xib in Resources */,
 				058C8355243A4DDD009F571C /* LaunchScreen.storyboard in Resources */,
 				0593D54E2444860800B76C36 /* GoogleService-Info.plist in Resources */,
 				058C8352243A4DDD009F571C /* Assets.xcassets in Resources */,
+				0593D5532444901E00B76C36 /* AboutViewController.xib in Resources */,
 				058C8350243A4DDB009F571C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,12 +550,15 @@
 			files = (
 				0566A96A243C498F000C7BBC /* NewsDetailViewController.swift in Sources */,
 				0566A964243C3902000C7BBC /* News.swift in Sources */,
+				05624C58244785FB00045071 /* WorkTableViewController.swift in Sources */,
+				0593D5522444901E00B76C36 /* AboutViewController.swift in Sources */,
 				0592F1FB2441C7C000AE527D /* ProfileViewController.swift in Sources */,
 				0561C9B2243B96D1006A17BD /* LoginViewController.swift in Sources */,
 				058C834D243A4DDB009F571C /* ViewController.swift in Sources */,
 				0566A966243C3B59000C7BBC /* LocalFile.swift in Sources */,
 				0566A96E243C5824000C7BBC /* StringExtension.swift in Sources */,
 				058C8349243A4DDB009F571C /* AppDelegate.swift in Sources */,
+				05624C5B2447874200045071 /* HeaderTableViewCell.swift in Sources */,
 				0566A962243C38F9000C7BBC /* User.swift in Sources */,
 				058C834B243A4DDB009F571C /* SceneDelegate.swift in Sources */,
 				0592F1FE2441CFB300AE527D /* LunchViewController.swift in Sources */,
